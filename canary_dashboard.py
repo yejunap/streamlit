@@ -410,7 +410,7 @@ if auto_refresh:
         </script>
         """, unsafe_allow_html=True)
         
-        st.info(f"🔄 자동 갱신 활성화 - 다음 갱신까지 {int(hours_remaining)}시간 {mins_remaining % 60}분 (1분마다 체크)")
+        st.info(f"🔄 자동 갱신 활성화 - 다음 갱신까지 약 {int(hours_remaining)}시간 {mins_remaining % 60}분")
 
 # 데이터 로드
 if 'daily' not in locals():
