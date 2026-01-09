@@ -255,13 +255,47 @@ def main():
     """메인 함수 - CLI 테스트용"""
     detector = DexArbitrageDetector(min_profit_percentage=1.0)
 
-    # 모니터링할 토큰 쌍
+    # 모니터링할 토큰 쌍 (시가총액 상위 100개 기준)
     token_pairs = [
-        'BTC/USDT',
-        'ETH/USDT',
-        'BNB/USDT',
-        'SOL/USDT',
-        'XRP/USDT',
+        # Top 10
+        'BTC/USDT', 'ETH/USDT', 'BNB/USDT', 'XRP/USDT', 'SOL/USDT',
+        'ADA/USDT', 'DOGE/USDT', 'TRX/USDT', 'AVAX/USDT', 'DOT/USDT',
+
+        # 11-20
+        'MATIC/USDT', 'LINK/USDT', 'SHIB/USDT', 'UNI/USDT', 'ATOM/USDT',
+        'LTC/USDT', 'ETC/USDT', 'XLM/USDT', 'BCH/USDT', 'FIL/USDT',
+
+        # 21-30
+        'APT/USDT', 'NEAR/USDT', 'ARB/USDT', 'VET/USDT', 'OP/USDT',
+        'ALGO/USDT', 'ICP/USDT', 'HBAR/USDT', 'IMX/USDT', 'INJ/USDT',
+
+        # 31-40
+        'FTM/USDT', 'AAVE/USDT', 'GRT/USDT', 'SAND/USDT', 'MANA/USDT',
+        'AXS/USDT', 'THETA/USDT', 'FLOW/USDT', 'XTZ/USDT', 'EOS/USDT',
+
+        # 41-50
+        'EGLD/USDT', 'APE/USDT', 'CHZ/USDT', 'RUNE/USDT', 'FXS/USDT',
+        'ZIL/USDT', 'ENJ/USDT', 'BAT/USDT', 'GALA/USDT', 'KCS/USDT',
+
+        # 51-60
+        'CRV/USDT', 'SNX/USDT', 'LDO/USDT', 'QNT/USDT', 'KLAY/USDT',
+        'ONE/USDT', 'ROSE/USDT', 'BLUR/USDT', 'CELO/USDT', 'ZEC/USDT',
+
+        # 61-70
+        'DASH/USDT', 'WAVES/USDT', 'NEO/USDT', 'IOTA/USDT', 'MKR/USDT',
+        'XMR/USDT', 'KSM/USDT', 'HNT/USDT', 'GMT/USDT', 'ANKR/USDT',
+
+        # 71-80
+        'COMP/USDT', '1INCH/USDT', 'SUI/USDT', 'SEI/USDT', 'WOO/USDT',
+        'DYDX/USDT', 'MASK/USDT', 'STORJ/USDT', 'OCEAN/USDT', 'COTI/USDT',
+
+        # 81-90
+        'KAVA/USDT', 'ZRX/USDT', 'YFI/USDT', 'BNT/USDT', 'REN/USDT',
+        'SKL/USDT', 'ONT/USDT', 'ICX/USDT', 'QTUM/USDT', 'IOTX/USDT',
+
+        # 91-100
+        'BAL/USDT', 'OMG/USDT', 'SUSHI/USDT', 'C98/USDT', 'JASMY/USDT',
+        'PERP/USDT', 'LQTY/USDT', 'RAY/USDT', 'CFX/USDT', 'GLMR/USDT',
     ]
 
     print("DEX 차익거래 기회 스캔 중...")
