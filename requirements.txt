@@ -3,3 +3,7 @@ yfinance
 pandas
 numpy
 plotly
+requests
+web3
+python-dotenv
+ccxt
